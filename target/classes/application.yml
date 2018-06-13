@@ -1,0 +1,25 @@
+# 服务端口
+server: 
+  port: 8080
+
+spring:
+  profiles: 
+    active: dev,redisPool
+
+  
+# Jedis
+jedis: 
+  host: 127.0.0.1
+  port: 6379
+  #password: 123456
+  
+# 日志
+logging: 
+  level: 
+    org.springframework.web: debug
+    org.springframework.transaction: debug
+    org.mybatis: debug
+  
+  
+  
+  
