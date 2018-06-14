@@ -69,6 +69,9 @@ public class MyShiroRealm extends AuthorizingRealm {
 		// 查询数据库获取用户信息,校验密码,判断用户状态
 		
 		// 加入判断逻辑
+		/*
+		 * if (userInfo.getState() == 1) { // 账户冻结 throw new LockedAccountException(); }
+		 */
 		
 
 		SimpleAuthenticationInfo authenticationInfo = new SimpleAuthenticationInfo(userName, password,
